@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --bg-background:hsl(225, 100%, 98%);
+    --main-text:hsl(224, 23%, 55%);
+    --bg-button: hsl(245, 75%, 52%);
+    --heading-text:hsl(223, 47%, 23%);
+
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: var(--bg-background);
+    color: var(--main-text);
+}
+
+.bg-image{
+    background: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+}
+
+.container{
+    max-width: 400px;
+    margin: 100px  auto 0;
+    background-color: white; 
+    text-align: center;
+    border-radius: 15px;
+}
+
+.container > img{
+    width: 100%;
+    border-radius: 15px 15px 0 0 ;
+}
+
+
+.text-content{
+    padding: 20px 25px;
+    line-height: 1.4rem;
+}
+
+.text-content h1, 
+.annual ul li:first-child {
+    color: var(--heading-text);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.annual{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--bg-background) ;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-bottom: 25px;
+    
+}
+
+.annual img{
+    width: 30%;
+}
+
+ul{
+    display: inline-block;
+    list-style: none;
+    padding: 0 0 0 10px;
+}
+
+.change:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--bg-button);
+    border: none;
+    font-weight: bold;
+    box-shadow: 1px 2px 20px var(--bg-button) ;
+}
+
+button:hover{
+   cursor: pointer;
+}
+
+.cancel{
+    margin: 20px auto 0 auto;
+    font-weight: bold;
+}
+
+.cancel:hover{
+    cursor: pointer;
+    color: var(--heading-text);
+}
+
+@media screen and (min-width:768px){
+    .bg-image{
+        background: url("../images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+    }
+}
